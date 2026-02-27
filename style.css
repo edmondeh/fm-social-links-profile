@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-700: hsl(0, 0%, 20%);
+    --color-gray-800: hsl(0, 0%, 12%);
+    --color-gray-950: hsl(0, 0%, 8%);
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    background-color: var(--color-gray-950);
+    color: var(--color-white);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card {
+    height: 610px;
+    max-width: 380px;
+    background-color: var(--color-gray-800);
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.card-image {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 30px;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-user-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-user-location {
+    color: var(--color-green);
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.card-user-bio {
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.card-links {
+    width: 100%;
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card-links li {
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--color-gray-700);
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: color 300ms ease, background-color 300ms ease;
+}
+
+.card-links li:hover {
+    color: var(--color-gray-700);
+    background-color: var(--color-green);;
+}
+
+.attribution {
+    width: 100%;
+    position: absolute;
+    bottom: 0.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.125rem;
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    .card-content {
+        padding: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-links li {
+        transition: none;
+    }
+}
