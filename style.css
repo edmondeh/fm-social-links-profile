@@ -39,7 +39,7 @@
 body {
     min-height: 100vh;
     font-family: "Inter", sans-serif;
-    font-size: 0.875rem;
+    font-size: 14px;
     background-color: var(--color-gray-950);
     color: var(--color-white);
 }
@@ -92,7 +92,7 @@ body {
 .card-user-location {
     color: var(--color-green);
     font-size: 0.875rem;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .card-user-bio {
