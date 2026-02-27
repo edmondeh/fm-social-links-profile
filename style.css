@@ -54,7 +54,7 @@ body {
 }
 
 .card {
-    height: 38.12rem;
+    /*height: 38.12rem;*/
     max-width: 23.75rem;
     background-color: var(--color-gray-800);
     border-radius: 0.75rem;
@@ -114,7 +114,7 @@ body {
     text-decoration: none;
     background-color: var(--color-gray-700);
     border-radius: 0.5rem;
-    padding: 1.57rem;
+    padding: 0.938rem;
     cursor: pointer;
     transition: color 300ms ease, background-color 300ms ease;
 }
