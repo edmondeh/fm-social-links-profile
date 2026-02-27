@@ -114,7 +114,7 @@ body {
     text-decoration: none;
     background-color: var(--color-gray-700);
     border-radius: 0.5rem;
-    padding: 0.875rem;
+    padding: 1.57rem;
     cursor: pointer;
     transition: color 300ms ease, background-color 300ms ease;
 }
