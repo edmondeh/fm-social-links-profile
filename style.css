@@ -85,14 +85,14 @@ body {
 }
 
 .card-user-name {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .card-user-location {
     color: var(--color-green);
     font-size: 14px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .card-user-bio {
